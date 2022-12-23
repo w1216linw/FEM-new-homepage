@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <title>Frontend Mentor | News homepage</title>
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="assets/images/logo.svg" alt="logo" />
+      </div>
+      <button class="menu-toggle">
+        <img class="menu-open" src="./assets/images/icon-menu.svg" alt="open menu" />
+        <img class="menu-close menu-hide" src="./assets/images/icon-menu-close.svg" alt="close menu" />
+      </button>
+      <nav class="links-container">
+        <ul class="links">
+          <li class="link">Home</li>
+          <li class="link">New</li>
+          <li class="link">Popular</li>
+          <li class="link">Trending</li>
+          <li class="link">Categories</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="new-news-section">
+        <div class="top-news">
+          <picture class="top-news-img">
+            <source
+              media="(min-width:550px)"
+              srcset="assets/images/image-web-3-desktop.jpg"
+            />
+            <img src="assets/images/image-web-3-mobile.jpg" alt="picture" />
+          </picture>
+          <div class="top-news-article">
+            <h1 class="top-news-title">The Bright Future of Web 3.0?</h1>
+            <div>
+              <p class="top-news-description">
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <button class="btn">Read more</button>
+            </div>
+          </div>
+        </div>
+        <div class="new-news">
+          <h2 class="new-title">New</h2>
+          <ul class="single-new">
+            <li>
+              <h3 class="single-new-title">Hydrogen VS Electric Cars</h3>
+              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </li>
+            <hr />
+            <li>
+              <h3 class="single-new-title">The Downsides of AI Artistry</h3>
+              <p>
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </li>
+            <hr />
+            <li>
+              <h3 class="single-new-title">Is VC Funding Drying Up?</h3>
+              <p>
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="ranking-section">
+        <ul class="ranked-news">
+          <li>
+            <div class="img-container">
+              <img
+                src="assets/images/image-retro-pcs.jpg"
+                alt="picture"
+                class="ranked-section-img"
+              />
+            </div>
+            <div>
+              <h2>01</h2>
+              <p class="ranked-news-sbt">Reviving Retro PCs</p>
+              <p class="ranked-news-des">
+                What happens when old PCs are given modern upgrades?
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="img-container">
+              <img
+                src="assets/images/image-top-laptops.jpg"
+                alt="picture"
+                class="ranked-section-img"
+              />
+            </div>
+            <div>
+              <h2>02</h2>
+              <p class="ranked-news-sbt">Top 10 Laptops of 2022</p>
+              <p class="ranked-news-des">
+                Our best picks for various needs and budgets.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="img-container">
+              <img
+                src="assets/images/image-gaming-growth.jpg"
+                alt="picture"
+                class="ranked-section-img"
+              />
+            </div>
+            <div>
+              <h2>03</h2>
+              <p class="ranked-news-sbt">The Growth of Gaming</p>
+              <p class="ranked-news-des">
+                How the pandemic has sparked fresh opportunities.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
